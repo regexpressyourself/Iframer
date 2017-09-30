@@ -1,0 +1,68 @@
+body {
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+#main-container {
+    color: #16444C;
+    height: 100vh;
+    width: 100vw;
+    background-color: #4ECDC4;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align:center;
+    font-size: 10vw;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align:center;
+    width: 66vw;
+    min-width: 200px;
+    max-height: 66vh;
+    margin:auto;
+}
+input {
+    color: #16444C;
+    background-color: #E4FDE1;
+    padding: 15px;
+    font-size: 3rem;
+    border: 1px solid #F3FFBD;
+    text-align: center;
+}
+#form > p{
+    color: #16444C;
+    font-size: 7rem;
+    margin-bottom: 20px;
+}
+button {
+    min-height: 8rem;
+    color: #16444C;
+    background-color: #FFE66D;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #D1BD5A;
+    font-size: 3rem;
+    padding: 10px;
+    margin-top: 20px;
+}
+#answer {
+    margin: auto;
+    margin-top: 30px;
+    min-height: 33vh;
+}
+xmp{
+    white-space: pre-wrap ;
+}
+xmp,
+#xmp{
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+

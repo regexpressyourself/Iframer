@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>IFramer</title>
+        <meta name="description" content="convert youtube links to iframe tags">
+        <meta name="author" content="Sam Messina">
+        <link rel="shortcut icon" href="./favicon.ico">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div id="form">
+
+                <p>Enter YouTube URL:</p>
+                <input onkeypress="return handleEnter(event)" 
+                       type="text" 
+                       name="url-input" 
+                       id="url-input">
+                <p id="button-container">
+                <button onClick=convertUrl() 
+                    type="submit"
+                    id="copy-button" >
+                    Get Iframe
+                </button>
+                </p>
+
+            </div>
+            <div id="answer">
+                <p id="answer-text"></p>
+            </div>
+
+        </div>
+
+        <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.7.1/dist/clipboard.min.js"></script>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
